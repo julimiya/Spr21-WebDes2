@@ -1,0 +1,28 @@
+@import url(reset.css);
+@import url(colors.css);
+@import url(flex-order.css);
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav ul li {
+    padding: 10px 0px;
+    border-bottom: 2px solid black;
+}
+
+nav ul:last-child {
+    border-bottom: none;
+}
+
