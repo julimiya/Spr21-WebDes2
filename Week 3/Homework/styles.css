@@ -16,8 +16,28 @@ img {
     max-width: 100%;
 }
 
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+
+
+
+  }
+
+.photo {
+
+}
+
 /* NAVIGATION */
-nav {
+nav {å
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -55,7 +75,10 @@ nav ul li:last-child {
     nav ul {
         flex-direction: row;
         flex-grow: 1;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        align-items: center;
+
+
     }
 
     nav ul li {
@@ -67,5 +90,18 @@ nav ul li:last-child {
     nav ul li:last-child {
         border-right: none;
     }
+
+    .logo {
+        position: absolute;
+        display: inline-block;
+
+    }
+    .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        flex-direction: row;
+      }
+
+
 
 }
