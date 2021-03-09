@@ -1,6 +1,20 @@
 @import url(reset.css);
 @import url(colors.css);
 @import url(flex-order.css);
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* Fonts */
+
+/* Body */
+
+body {
+    margin: 0px;
+
+}
+
+img {
+    max-width: 100%;
+}
 
 /* NAVIGATION */
 nav {
@@ -12,6 +26,9 @@ nav {
 nav ul {
     display: flex;
     flex-direction: column;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+
 }
 
 .logo {
@@ -20,14 +37,17 @@ nav ul {
 
 nav ul li {
     padding: 10px 0px;
-    border-bottom: 2px solid black;
 }
 
 nav ul li:last-child {
     border-bottom: none;
 }
 
+
 @media (min-width: 768px){
+
+
+
     nav {
         flex-direction: row;
     }
@@ -40,12 +60,12 @@ nav ul li:last-child {
 
     nav ul li {
         border-bottom: none;
-        border-right: 2px solid black;
-        flex-grow: 1;
         text-align: center;
+        flex-grow: 1;
     }
 
     nav ul li:last-child {
         border-right: none;
     }
+
 }
